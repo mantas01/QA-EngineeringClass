@@ -75,28 +75,48 @@ public class Homework {
 		
 		
 		//Problem 12: Find the mid given three numbers
+		System.out.print(newLine+"Problem 12: Find the mid given three numbers"+newLine);
 		int x=5, y=13, z=11;
 		//Since we have 3 number, we have 6 possible permutations/outcomes
 		if (x > y) {
 			if (y > z) {
-				System.out.print("The middle number is: "+y);
+				System.out.print("The middle number is: "+y+newLine);
 			} else if (x> z) {
-				System.out.print("The middle number is: "+z);
+				System.out.print("The middle number is: "+z+newLine);
 			} else {
-				System.out.print("The middle number is: "+x);
+				System.out.print("The middle number is: "+x+newLine);
 			}
 		} else {
 			if (x > z) {
-				System.out.print("The middle number is: "+x);
+				System.out.print("The middle number is: "+x+newLine);
 			} else if (y > z) {
-				System.out.print("The middle number is: "+z);
+				System.out.print("The middle number is: "+z+newLine);
 			} else {
-				System.out.print("The middle number is: "+y);
+				System.out.print("The middle number is: "+y+newLine);
 			}
 		}
 		
-		//Problem 12: Find the mid given three numbers
-	
-	
+		//Problem 13: Printing the first 10 odd and even numbers
+		//Using modulus operator we can check if the number is even or odd. 
+		//If we divide any number by 2 and reminder is 0 then the number is
+		//even, otherwise it is odd.
+		System.out.print(newLine+"Problem 13: Printing the first 10 odd and even numbers"+newLine);
+		int input = 20;
+		for(int j=1; j <= input; j++){               
+			if( j%2 == 0){
+				System.out.print("      " + "This is an Even number: "+j+newLine);
+			}
+			else{System.out.print("This is an Odd number: "+j);}
+		}
+		
+		//Problem 14: Display numbers in a pyramid fashion
+		System.out.print(newLine+"Problem 14: Display numbers in a pyramid fashion "+newLine);
+		for(int d=1;d<=10;d++){ 
+			for(int e=1;e<=d;e++){
+				System.out.print(e);
+			}
+			System.out.println();
+		}
+
 	}
 }
